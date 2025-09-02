@@ -7,11 +7,64 @@
     <meta name="description" content="A resource hub for businesses in Quito, providing information on local events, networking opportunities, and business directories.">
     <meta name="keywords" content="Quito, Chamber of Commerce, Business Directory, Local Events, Networking, Local Shopping">
     <meta name="author" content="Marco Merizalde">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/desktop.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="/styles/mobile.css" media="screen and (max-width: 479 px)">
     <link rel="stylesheet" href="/styles/tablet.css" media="screen and (min-width: 480px) and (max-width: 767px)">
+    <link rel="stylesheet" href="/styles/mobile.css" media="screen and (max-width: 479px)">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <h1>Welcome to the Quito Chamber of Commerce</h1>
+            <div class="hamburger-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#directory">Business Directory</a></li>
+                <li><a href="#networking">Networking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for our upcoming events!</p>
+        </section>
+
+        <section id="directory">
+            <h2>Business Directory</h2>
+            <p>Explore our directory of local businesses.</p>
+        </section>
+
+        <section id="networking">
+            <h2>Networking Opportunities</h2>
+            <p>Connect with other local businesses.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/marcomv85" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a> |
+            <a href="https://www.linkedin.com/in/marco-merizalde-verduga-83879b133/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="copy-right">
+            <p>&copy; <span id="currentyear"></span> Quito Chamber of Commerce. <br> Marco Merizalde <br> Ecuador </p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="/scripts/navigation.js"></script>
+    <script src="/scripts/course.js"></script>
+    <script src="/scripts/date.js"></script>
+
 </body>
 </html>

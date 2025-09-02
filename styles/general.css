@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Open+Sans:ital@0;1&display=swap');
+
+:root {
+    --primary-color: #08415c;
+    --secondary-color: #cc2936;
+    --accent-color: #ebbab9;
+    --links-color: #F1DFA1;
+    --link-color-visited: #D4A62C;
+    --text-color: #ffffff;
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+a {
+    color: var(--links-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-color-visited);
+}
+
+header{
+    font-family: var(--font-title);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    padding-left: 3.5rem;
+}
+
+nav ul li:hover{
+    background-color: var(--secondary-color);
+
+}
+
+nav ul li a:hover {    
+    color: var(--text-color);
+}
+
+nav.open {
+    display: block;
+}
+
+main {
+    font-family: var(--font-body);
+    padding: 10px;
+}
+
+footer {
+    font-family: var(--font-title);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0px -2px 4px rgba(255, 0, 0, 0.3);
+}

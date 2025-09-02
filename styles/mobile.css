@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    flex-direction: column;
+    align-items: center;
+}
+
+header div h1 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    text-align: center;
+    width: 85%;
+}
+
+.hamburger-menu {
+    display: block;
+    font-size: 2rem;
+}
+
+header nav {
+    display: none;
+}

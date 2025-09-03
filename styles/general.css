@@ -59,6 +59,75 @@ nav.open {
 main {
     font-family: var(--font-body);
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.course-buttons button {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.course-title-b{
+    background: var(--secondary-color);
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.course-title-check{
+    background: var(--links-color);
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.course-buttons button:hover {
+    background-color: var(--accent-color);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.course-card{
+    width: 200px;
+}
+
+
+section {
+    width: 70%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(8, 65, 92, 0.5);
+    margin: 10px;
 }
 
 footer {

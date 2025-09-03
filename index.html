@@ -27,27 +27,42 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="#">Final</a></li>
-                <li><a href="#events">Events</a></li>
+                <!-- <li><a href="#events">Events</a></li>
                 <li><a href="#directory">Business Directory</a></li>
-                <li><a href="#networking">Networking</a></li>
+                <li><a href="#networking">Networking</a></li> -->
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="events">
-            <h2>Upcoming Events</h2>
-            <p>Stay tuned for our upcoming events!</p>
+        <div class="course-buttons">
+            <button class="all-courses-button">View All Courses</button>
+            <button class="wdd-courses-button">View WDD Courses</button>
+            <button class="cse-courses-button">View CSE Courses</button>
+        </div>
+
+        <section id="all-courses">
+            <div>
+                <h2>All Courses</h2>
+                <p>Total Courses: <span id="total-completed">${pTotal}</span></p>
+            </div>
+            <div class="cards"></div>
         </section>
 
-        <section id="directory">
-            <h2>Business Directory</h2>
-            <p>Explore our directory of local businesses.</p>
+        <section id="wdd-courses">
+            <div>
+                <h2>WDD Courses</h2>
+                <p>Total Courses: <span id="wdd-completed">${wddTotal}</span></p>
+            </div>
+            <div class="cards"></div>
         </section>
 
-        <section id="networking">
-            <h2>Networking Opportunities</h2>
-            <p>Connect with other local businesses.</p>
+        <section id="cse-courses">
+            <div>
+                <h2>CSE Courses</h2>
+                <p>Total Courses: <span id="cse-completed">${cseTotal}</span></p>
+            </div>
+            <div class="cards"></div>
         </section>
     </main>
 

@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header div h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+
+
+nav ul li:hover{
+    background-color: transparent;
+}

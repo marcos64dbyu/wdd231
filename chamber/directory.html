@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Directory</title>
-    <link rel="stylesheet" href="../styles.css">
     <meta name="description" content="A directory page for the chamber section.">
     <meta class="author" content="Marco Merizalde">
-    <meta property="og:title" content="Apple">
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
-    <!-- facebook apple -->
-    <meta property="og:description" content="Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support.">
-    <meta property="og:url" content="https://www.apple.com/">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 480px) and (max-width: 767px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 479px)">
+    <!-- meta tags for social media -->
+    <meta property="og:title" content="Chamber Directory Quito">
+    <meta property="og:description" content="Explore the Chamber Directory of Quito, Ecuador, featuring local businesses, services, and community events.">
+    <meta property="og:url" content="https://marcos64dbyu.github.io/wdd231/chamber/directory.html">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743" />
+    <meta property="og:image" content="images/favicon.png">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Apple">
+    <meta property="og:site_name" content="Chamber Quito Directory">
 </head>
 <body>
     <header>
-        <h1>Directory</h1>
+        <div>
+            <h1>Welcome to the Quito Chamber of Commerce</h1>
+            <div class="hamburger-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="chamber/directory.html">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
@@ -27,7 +45,18 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Chamber Directory. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/marcomv85" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a> |
+            <a href="https://www.linkedin.com/in/marco-merizalde-verduga-83879b133/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="copy-right">
+            <p>&copy; <span id="currentyear"></span> Quito Chamber of Commerce. <br> Marco Merizalde <br> Ecuador </p>
+        </div>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/course.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>

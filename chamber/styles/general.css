@@ -28,6 +28,12 @@ header{
     box-shadow: 0 2px 4px rgba(255, 0, 0, 0.5);
 }
 
+header h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 2rem;
+}   
+
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -136,7 +142,6 @@ main {
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-    background-color: ;
 }
 
 .member-class {
@@ -155,7 +160,7 @@ main {
 }
 
 .member-card img {
-    max-width: auto;
+    width: auto;
     height: 4rem;
     border-radius: 10px;
 }   

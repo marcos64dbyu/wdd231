@@ -33,15 +33,57 @@
         
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="chamber/directory.html">Chamber</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Chamber</a></li>
                 <li><a href="#">Final</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="directory-section">
+            <div class="directory-header">
+                <div>
+                    <h2>Directory</h2>
+                    <!-- <p>This is the directory page for the chamber section.</p> -->
+                </div>
+
+                <!-- filter selector -->
+                <div class="filter-container">
+                    <label for="member-filter">Level filter:</label>
+                    <select id="member-filter">
+                        <option value="all" selected>All Members</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Bronze">Bronze</option>
+                    </select>
+                </div>
+
+            </div>
             
+            <!-- Principal container cards -->
+            <div class="directory-container" id="directoryContainer">
+                <!-- Sections for each card type -->
+                <section id="all-members" class="member-class">
+                    <h3>All Members</h3>
+                    <div class="cards"></div>
+                </section>
+
+                <!-- Sections for each level -->
+                <section id="gold-members" class="member-class" style="display:none;">
+                    <h3>Gold Members</h3>
+                    <div class="cards"></div>
+                </section>
+
+                <section id="silver-members" class="member-class" style="display:none;">
+                    <h3>Silver Members</h3>
+                    <div class="cards"></div>
+                </section>
+
+                <section id="bronze-members" class="member-class" style="display:none;">
+                    <h3>Bronze Members</h3>
+                    <div class="cards"></div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
@@ -56,7 +98,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/navigation.js"></script>
-    <script src="scripts/course.js"></script>
+    <script src="scripts/members.js"></script>
     <script src="scripts/date.js"></script>
 </body>
 </html>

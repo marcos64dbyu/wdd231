@@ -1,59 +1,59 @@
 {
   "members": [
     {
-      "name": "Tecnología Andina",
-      "address": "Av. Amazonas N23-101, Quito, Ecuador",
-      "phone": "+593 2 456 7890",
-      "website": "https://tecnologiaandina.com",
-      "image": "images/tecnologia-andina.png",
+      "name": "Hospital Carlos Andrade Marín",
+      "address": "Quito, Pichincha, Ecuador",
+      "phone": "+593 2 381 8300",
+      "website": "http://hcam.iess.gob.ec",
+      "image": "images/logo-hospital-carlos-andrade.png",
       "membership": "Gold"
     },
     {
-      "name": "Café Sierra Verde",
-      "address": "Calle Bolívar 450, Cuenca, Ecuador",
-      "phone": "+593 7 283 4456",
-      "website": "https://cafesierra.com",
-      "image": "images/cafe-sierra.png",
+      "name": "Corporación Nacional de Telecomunicaciones (CNT EP)",
+      "address": "Av. 6 de Diciembre s/n, Quito, Pichincha, Ecuador",
+      "phone": "+593 2 398 2000",
+      "website": "https://www.cnt.gob.ec",
+      "image": "images/cnt.svg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Inntagriecu Andina Tecnologías",
+      "address": "Quito, Ecuador",
+      "phone": "+593 2 123 4567",
+      "website": "https://inntagriecuandina.com",
+      "image": "images/inntagriecu.svg",
       "membership": "Silver"
     },
     {
-      "name": "Construcciones del Pacífico",
-      "address": "Av. Malecón 2000, Guayaquil, Ecuador",
-      "phone": "+593 4 225 7788",
-      "website": "https://construccionpacifico.ec",
-      "image": "images/construcciones-pacifico.png",
+      "name": "Andina Distribuidora",
+      "address": "Quito, Ecuador",
+      "phone": "+593 99 503 0287",
+      "website": "https://andinadistribuidora.com",
+      "image": "images/andina-distribuidora.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Liga Deportiva Universitaria de Quito",
+      "address": "Robles 653 y Amazonas, Edificio Proinco, Quito, Ecuador",
+      "phone": "+593 2 2527613",
+      "website": "http://ldu.com.ec",
+      "image": "images/ldu-quito.png",
       "membership": "Bronze"
     },
     {
-      "name": "Hospital San Gabriel",
-      "address": "Av. 6 de Diciembre y Eloy Alfaro, Quito, Ecuador",
-      "phone": "+593 2 600 1122",
-      "website": "https://hospitalsangabriel.ec",
-      "image": "images/hospital-sangabriel.png",
+      "name": "Banco Pichincha C.A.",
+      "address": "Av. Amazonas y Pereira, Edificio Banco Pichincha, Quito, Pichincha, Ecuador",
+      "phone": "+593 2 2999 999",
+      "website": "https://www.pichincha.com",
+      "image": "images/banco-pichincha.svg",
       "membership": "Gold"
     },
     {
-      "name": "Moda Latina",
-      "address": "C.C. Mall del Sol, Guayaquil, Ecuador",
-      "phone": "+593 4 600 3344",
-      "website": "https://modalatina.ec",
-      "image": "images/moda-latina.png",
-      "membership": "Standard"
-    },
-    {
-      "name": "Agencia de Viajes Mundo",
-      "address": "Calle 10 de Agosto 234, Ambato, Ecuador",
-      "phone": "+593 3 244 5566",
-      "website": "https://viajesmundo.ec",
-      "image": "images/viajes-mundo.png",
-      "membership": "Silver"
-    },
-    {
-      "name": "Panadería La Tradición",
-      "address": "Av. Colón 678, Loja, Ecuador",
-      "phone": "+593 7 255 9988",
-      "website": "https://panlatradicion.ec",
-      "image": "images/panaderia-tradicion.png",
+      "name": "Uribe Schwarzkopf",
+      "address": "Quito, Pichincha, Ecuador",
+      "phone": "+593 2 2222 2222",
+      "website": "https://uribeschwarzkopf.com",
+      "image": "images/uribe-shwarzkpof.webp",
       "membership": "Bronze"
     }
   ]

@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Open+Sans:ital@0;1&display=swap');
-
 :root {
     --primary-color: #08415c;
     --secondary-color: #cc2936;
@@ -26,6 +23,17 @@ header{
     background-color: var(--primary-color);
     color: var(--text-color);
     box-shadow: 0 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+header nav{
+    margin-top: 3rem;
+}
+
+main h1 {
+    position: absolute; /* o relative según tu diseño */
+    top: 0px;
+    color: var(--text-color);
+    font-family: var(--font-title);
 }
 
 .hamburger-menu {

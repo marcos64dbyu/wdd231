@@ -2,6 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    height: 60px;
 }
 
 nav {
@@ -9,11 +10,11 @@ nav {
     align-items: center;
 }
 
-header div h1 {
+main h1 {
     font-size: 1.7rem;
     margin: 10px 0;
     text-align: center;
-    width: 95%;
+    width: 70%;
 }
 
 .hamburger-menu {

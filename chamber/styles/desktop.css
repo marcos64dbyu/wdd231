@@ -28,3 +28,8 @@ nav ul li {
 nav ul li:hover{
     background-color: transparent;
 }
+
+#member-filter, .directory, .combobox {
+    position: relative;      
+    z-index: 10;             
+}

@@ -1,6 +1,8 @@
 header {
     display: flex;
     flex-direction: column;
+    background-color: var(--primary-color);
+    height: 80px;
 }
 
 nav {
@@ -8,11 +10,11 @@ nav {
     align-items: center;
 }
 
-header div h1 {
+main h1 {
     font-size: 1.3rem;
     margin: 10px 0;
     text-align: center;
-    width: 85%;
+    width: 70%;
 }
 
 .hamburger-menu {

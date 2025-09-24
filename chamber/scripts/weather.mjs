@@ -32,7 +32,7 @@ const weatherDescriptions = {
 export async function getWeather() {
   try {
     const url =
-      "https://api.open-meteo.com/v1/forecast?latitude=-0.2299&longitude=-78.5249&current_weather=true";
+      "https://api.open-meteo.com/v1/forecast?latitude=-0.2299&longitude=-78.5249&current_weather=true&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=auto";
 
     const response = await fetch(url);
     if (!response.ok) {
@@ -40,15 +40,27 @@ export async function getWeather() {
     }
 
     const data = await response.json();
+    if (!data.current_weather || !data.daily) return null;
 
-    if (!data.current_weather) return null;
+    // Current weather
+    const current = {
+      temperature: data.current_weather.temperature,
+      windspeed: data.current_weather.windspeed,
+      description:
+        weatherDescriptions[data.current_weather.weathercode] ||
+        "Unknown condition"
+    };
 
-    // Add a description using the weather code
-    const code = data.current_weather.weathercode;
-    data.current_weather.description =
-      weatherDescriptions[code] || "Unknown condition";
+    // 3-Day Forecast
+    const forecast = data.daily.time.map((date, i) => ({
+      date,
+      min: data.daily.temperature_2m_min[i],
+      max: data.daily.temperature_2m_max[i],
+      description:
+        weatherDescriptions[data.daily.weathercode[i]] || "Unknown condition"
+    }));
 
-    return data.current_weather;
+    return { current, forecast };
   } catch (error) {
     console.error("Error fetching weather:", error);
     return null;

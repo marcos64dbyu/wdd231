@@ -85,7 +85,7 @@ header div nav.open {
     align-items: center;
     background-color: var(--primary-color);
     position: absolute;
-    /* top: 60px; */
+    justify-content: space-between;
     left: 0;
     width: 100%;
     z-index: 4000;

@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function showOnly(sectionId) {
-    sectionId = sectionId.toLowerCase();   // 🔑 normalización
+    sectionId = sectionId.toLowerCase();   // normalizer
 
     // Hide all sections
     document.querySelectorAll('.directory-container section')
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(json => {
       const members = json.members;
       populateCards(members);
-      showOnly('all'); // mostrar por defecto "all"
+      showOnly('all'); // show "all"
     })
     .catch(err => console.error('Error loading members:', err));
 
   // Listener for the filter
   filterSelect.addEventListener('change', () => {
-    showOnly(filterSelect.value);   // ahora funciona con mayúsculas o minúsculas
+    showOnly(filterSelect.value);   
   });
 });

@@ -116,7 +116,7 @@ button {
     transition: background-color 0.3s;
 }
 
-.personal-use div, .spotlight {
+.personal-use div, #spotlightContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

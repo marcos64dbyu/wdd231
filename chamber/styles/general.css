@@ -74,7 +74,7 @@ nav.open {
 }
 
 .hero {
-    width: 110%;
+    width: 100%;
     height: auto;
     margin: -10px 0 10px 0;
 }
@@ -93,7 +93,7 @@ header div nav.open {
 
 main {
     font-family: var(--font-body);
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     align-items: center;

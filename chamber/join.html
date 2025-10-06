@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <meta name="description" content="A resource hub for businesses in Quito, providing information on local events, networking opportunities, and business directories.">
+    <meta name="keywords" content="Quito, Chamber of Commerce, Business Directory, Local Events, Networking, Local Shopping">
+    <meta name="author" content="Marco Merizalde">
+    <!-- Google Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts embed -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:ital,wght@0,400;1,400&family=Open+Sans:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 480px) and (max-width: 767px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 479px)">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <span>&#9776;</span>
+        </div>
+        
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Business Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Final</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Join the Chamber of Commerce</h1>
+        <p>Become a valued member of our community and enjoy exclusive benefits for your business.</p>
+
+        <section class="body-section">
+            <!-- Membership Application Form -->
+            <form id="membershipForm" method="get" action="thankyou.html" class="join-form">
+                <label>
+                First Name:
+                <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>
+                Last Name:
+                <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                Organizational Title:
+                <input type="text" name="orgTitle" title="Your position or title" autocomplete="organization-title"
+                        pattern="[A-Za-z\\s\\-]{7,}" placeholder="e.g., Marketing Director">
+                </label>
+
+                <label>
+                Email:
+                <input type="email" name="email" title="Enter a valid email address" autocomplete="email"
+                        placeholder="example@email.com" required>
+                </label>
+
+                <label>
+                Mobile Phone:
+                <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                Business / Organization Name:
+                <input type="text" name="organization" title="Enter your business or organization name"
+                        autocomplete="organization" required>
+                </label>
+
+                <label>
+                Membership Level:
+                <select name="membershipLevel" title="Select your membership level" required>
+                    <option value="">-- Select Level --</option>
+                    <option value="np">NP Membership (Non-Profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                </label>
+
+                <label>
+                Business / Organization Description:
+                <textarea name="description" title="Describe your organization" rows="4"
+                            placeholder="Tell us a little about your organization..."></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
+
+            <!-- Membership Level Cards -->
+            <section class="membership-cards">
+                <div class="card np">
+                <h2>NP Membership</h2>
+                <p>For non-profit organizations. Free membership.</p>
+                <button class="info-button" data-modal="npModal">View Benefits</button>
+                </div>
+
+                <div class="card bronze">
+                <h2>Bronze Membership</h2>
+                <p>Basic membership plan for growing businesses.</p>
+                <button class="info-button" data-modal="bronzeModal">View Benefits</button>
+                </div>
+
+                <div class="card silver">
+                <h2>Silver Membership</h2>
+                <p>Includes event discounts and promotional visibility.</p>
+                <button class="info-button" data-modal="silverModal">View Benefits</button>
+                </div>
+
+                <div class="card gold">
+                <h2>Gold Membership</h2>
+                <p>Exclusive access to chamber leadership and advertising perks.</p>
+                <button class="info-button" data-modal="goldModal">View Benefits</button>
+                </div>
+            </section>
+
+            <!-- Membership Benefit Modals -->
+            <dialog id="npModal" class="modal">
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                <li>Free for registered non-profit organizations</li>
+                <li>Access to community events</li>
+                <li>Networking opportunities</li>
+                </ul>
+                <button class="close-button">Close</button>
+            </dialog>
+
+            <dialog id="bronzeModal" class="modal">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                <li>Basic advertising on chamber site</li>
+                <li>Event participation at discounted rates</li>
+                <li>Access to member-only resources</li>
+                </ul>
+                <button class="close-button">Close</button>
+            </dialog>
+
+            <dialog id="silverModal" class="modal">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                <li>Increased promotion and visibility</li>
+                <li>Free training sessions</li>
+                <li>Spotlight on the home page</li>
+                </ul>
+                <button class="close-button">Close</button>
+            </dialog>
+
+            <dialog id="goldModal" class="modal">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                <li>Premium advertising positions</li>
+                <li>Access to leadership meetings</li>
+                <li>Priority event invitations and sponsorships</li>
+                </ul>
+                <button class="close-button">Close</button>
+            </dialog>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/marcomv85" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a> |
+            <a href="https://www.linkedin.com/in/marco-merizalde-verduga-83879b133/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="copy-right">
+            <p>&copy; <span id="currentyear"></span> Quito Chamber of Commerce. <br> Marco Merizalde <br> Ecuador </p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/join.js"></script>
+
+</body>
+</html>

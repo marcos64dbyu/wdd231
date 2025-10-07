@@ -23,3 +23,24 @@ main h1 {
 header nav {
     display: none;
 }
+
+form {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+form label {
+    width: 80%;
+}
+
+.submit-btn {
+    width: 80%;
+    display: block;
+}
+
+.membership-icon {
+    position: absolute;
+    width: 70px;
+    top: 80px;
+    right: 20px;
+}

@@ -1,8 +1,13 @@
 .body-section {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
+
+  main p{
+    padding: 0 10px;
+  }
 
 /* ----------- FORM ----------- */
 .join-form {
@@ -80,6 +85,7 @@
 .card p {
   margin-bottom: 1rem;
   color: #555;
+  width: 60%;
 }
 
 .info-button {
@@ -142,6 +148,18 @@ dialog ul {
 
 .close-button:hover {
   background-color: #a01f2b;
+}
+
+
+.bronze, .silver, .gold {
+  position: relative;
+}
+
+.membership-icon {
+  position: absolute;
+  width: 100px;
+  top: 20px;
+  right: 20px;
 }
 
 @keyframes modalFade {

@@ -92,7 +92,6 @@ main h1{
   font-size: 26px;
   cursor: pointer;
   color: #0A1622;
-  user-select: none;
 }
 
 /* Oculta el menú por defecto */

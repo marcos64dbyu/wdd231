@@ -1,0 +1,213 @@
+/* General styles */
+@font-face {
+  font-family: 'BankGothic';
+  src: url('../fonts/bgothl.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root{
+  --primary-color:#0A1622;
+  --secondary-color:#f15a24;
+  --hero-h2-font: 'BankGothic', sans-serif;
+}
+
+main h1{
+  color: none;
+  height: 12rem;
+}
+
+/* Top bar menu */
+.navbar{
+  background:#fff;
+  border-bottom:1px solid #dcdfe3;
+  position:sticky;
+  top:0;
+  z-index:10;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.navbar .container{
+  max-width:1200px;
+  margin-left:1rem;
+  padding:0 16px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  height:56px;
+}
+
+.hamburger-menu{ 
+    display:none; 
+    cursor:pointer; 
+    font-size:24px; 
+    line-height:1; }
+
+.hamburger-menu span{ 
+    display:inline-block; 
+    padding:8px 0; 
+}
+
+.navbar-collapse{ 
+    flex:1; 
+}
+
+.navbar-collapse ul{
+  list-style:none; 
+  display:flex; 
+  align-items:center; 
+  gap:28px;
+  margin:0; 
+  padding:0;
+}
+
+.navbar a{
+  text-decoration:none; 
+  color:#0b2230; 
+  display:block; 
+  padding:10px 0;
+}
+
+.navbar a:hover{ 
+    text-decoration:underline; 
+}
+
+/* Dropdown */
+.nav-dropdown{ 
+    position:relative; 
+}
+
+.navbar .dropdown-menu{
+  display:none !important;
+  position:absolute; 
+  left:0; 
+  top:100%;
+  min-width:220px; 
+  background:#fff; 
+  border:1px solid #e6e8eb; border-radius:10px;
+  padding:6px 0; 
+  box-shadow:0 8px 20px rgba(0,0,0,.08); 
+  z-index:1000;
+}
+
+.dropdown-menu li a{ 
+    padding:8px 14px; 
+    white-space:nowrap; 
+}
+
+.dropdown-menu li a:hover{ 
+    background:#f5f7fa; 
+}
+
+.nav-link {
+    border: none;
+    background: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* show nav-dropdown menu */
+.nav-dropdown:hover > .dropdown-menu {
+  display: block !important;
+}
+
+.nav-dropdown.open > .dropdown-menu{ 
+    display:block !important; 
+}
+
+/* Hero Image Section */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: var(--primary-color);
+    height: 13rem;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    z-index: 8;
+}
+
+.hero-image img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-family: var(--hero-h2-font);
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero-text p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* body page */
+
+section {
+    padding: 2rem 3rem;
+    max-width: 1200px;
+    margin: 10px auto;
+    border: solid 1px #dcdfe3;
+    border-radius: 10px;
+}
+
+.highlight-title {
+    font-family: var(--hero-h2-font);
+    font-size: 1.5rem;
+}
+
+.scenario-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.scenario-card {
+    border: 1px solid #dcdfe3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.scenario-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    border-top:3px solid #dcdfe3;
+    background: var(--primary-color);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+link, a {
+    color: white;
+    text-decoration: none;
+}
+
+link:hover, a:hover {
+    text-decoration: underline;
+}

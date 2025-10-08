@@ -1,0 +1,44 @@
+{
+  "scenarios": [
+    {
+      "name": "Andrés – Industrial Automation Engineer",
+      "age": 36,
+      "quote_en": "I need to optimize a production line with systems that integrate PLCs, sensors, and remote monitoring.",
+      "description_en": "Andrés looks for integrated automation solutions to design efficient logic, visualize real-time data, and ensure interoperability among industrial devices.",
+      "section": "Industrial Automation",
+      "image": "images/rsz_1andres_automation.jpg"
+    },
+    {
+      "name": "Laura – Industrial Software Developer",
+      "age": 29,
+      "quote_en": "I'm developing a control application for a plant and need to securely connect it to the existing SCADA system.",
+      "description_en": "Laura explores the Digital Solutions section to learn about industrial APIs, Firebase integration, and secure cloud-based platforms for reliable industrial control.",
+      "section": "Digital Solutions",
+      "image": "images/rsz_1laura_software.jpg"
+    },
+    {
+      "name": "Ricardo – Electronics Design Specialist",
+      "age": 41,
+      "quote_en": "I want to send my schematics to manufacture a PCB prototype with testing and component validation.",
+      "description_en": "Ricardo visits the Electronic Design area to upload his design files, request manufacturing, and receive expert assistance in prototype optimization.",
+      "section": "Electronic Design",
+      "image": "images/rsz_1ricardo_electronics.jpg"
+    },
+    {
+      "name": "Marta – Production Plant Supervisor",
+      "age": 45,
+      "quote_en": "I need to monitor plant performance and reduce downtime through automated reports.",
+      "description_en": "Marta accesses the Projects Portal or Automation area to visualize KPIs, schedule maintenance, and analyze energy efficiency reports in real time.",
+      "section": "Automation / Projects",
+      "image": "images/rsz_1marta_operations.jpg"
+    },
+    {
+      "name": "Kevin – Mechatronics Student",
+      "age": 22,
+      "quote_en": "I want to learn how to program PLCs and create my first automation projects connected to the cloud.",
+      "description_en": "Kevin visits the future IntegraDeline Academy, where he can access tutorials, simulations, and real-world project examples to develop practical automation skills.",
+      "section": "Academy / Learning",
+      "image": "images/rsz_1kevin_student.jpg"
+    }
+  ]
+}

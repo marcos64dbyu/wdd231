@@ -78,3 +78,53 @@ main h1{
     font-size: 0.7rem;
     margin: 0;
 }
+
+/* --- MENU TOGGLE SAFE MODE (solo afecta pantallas pequeñas) --- */
+
+/* Oculta el checkbox para no interferir con el diseño */
+#menu-toggle {
+  display: none;
+}
+
+/* Estilo del icono del menú */
+.menu-icon {
+  display: block;
+  font-size: 26px;
+  cursor: pointer;
+  color: #0A1622;
+  user-select: none;
+}
+
+/* Oculta el menú por defecto */
+.navbar-collapse {
+  display: none;
+}
+
+/* Muestra el menú cuando el checkbox está marcado */
+#menu-toggle:checked ~ .navbar-collapse {
+  display: block;
+}
+
+/* Diseño vertical del menú cuando está desplegado */
+.navbar-collapse ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.navbar-collapse ul li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-collapse ul li a {
+  color: #0A1622;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-collapse ul li a:hover {
+  background: #f5f5f5;
+}

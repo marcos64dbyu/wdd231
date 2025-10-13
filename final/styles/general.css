@@ -193,6 +193,12 @@ section {
     border-radius: 10px;
 }
 
+.quote {
+    font-style: italic;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
 /* Footer */
 footer {
     border-top:3px solid #dcdfe3;

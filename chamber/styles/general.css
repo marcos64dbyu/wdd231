@@ -210,6 +210,7 @@ button {
 
 .intro {
     width: 90%;
+    text-align: center;
 }
 
 .body-section,.current-events, .weather, .spotlight {

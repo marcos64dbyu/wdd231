@@ -44,3 +44,16 @@ form label {
     top: 80px;
     right: 20px;
 }
+
+.card {
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.card figure img {
+    width: 220px;
+}
+
+section {
+    padding: 1rem;
+}

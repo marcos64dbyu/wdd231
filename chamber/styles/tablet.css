@@ -24,3 +24,7 @@ header h1 {
 header nav {
     display: none;
 }
+
+.card figure img {
+    width: 220px;
+}

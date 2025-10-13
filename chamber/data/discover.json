@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Basilica of the National Vow",
+    "address": "Carchi N122 and Venezuela Street, Historic Center, Quito",
+    "description": "One of the largest neo-Gothic churches in Latin America, famous for its gargoyles inspired by Ecuador's native animals and for offering panoramic views of the city.",
+    "image": "images/basilica.webp"
+  },
+  {
+    "name": "Middle of the World",
+    "address": "Av. Manuel Córdova Galarza Km. 13.5, Quito",
+    "description": "An emblematic monument marking the equatorial line, where you can stand with one foot in each hemisphere. It includes museums, shops, and interactive scientific demonstrations.",
+    "image": "images/mitad_del_mundo.webp"
+  },
+  {
+    "name": "Quito Cable Car (Teleférico)",
+    "address": "End of Av. Occidental, Quito",
+    "description": "A cable car that ascends the Pichincha Volcano, offering breathtaking views of Quito and access to scenic hiking trails ideal for nature lovers and photographers.",
+    "image": "images/teleferiqo.webp"
+  },
+  {
+    "name": "Plaza Grande",
+    "address": "Venezuela and García Moreno Streets, Historic Center, Quito",
+    "description": "The political and social heart of Quito, surrounded by the Carondelet Palace, the Metropolitan Cathedral, and other historic colonial landmarks.",
+    "image": "images/plaza_grande.webp"
+  },
+  {
+    "name": "La Ronda Street",
+    "address": "Morales Street (La Ronda), Historic Center, Quito",
+    "description": "One of the city’s most traditional streets, filled with artisan workshops, coffee shops, and live music, reflecting the bohemian spirit of colonial Quito.",
+    "image": "images/la_ronda.webp"
+  },
+  {
+    "name": "La Carolina Park",
+    "address": "Av. de los Shyris, Quito",
+    "description": "A large urban park featuring lagoons, jogging tracks, sports courts, the Botanical Garden, and recreational spaces for families and athletes.",
+    "image": "images/parque_la_carolina.webp"
+  },
+  {
+    "name": "City Museum",
+    "address": "García Moreno S1-47 and Rocafuerte Streets, Quito",
+    "description": "Located in a former colonial hospital, this museum narrates Quito’s history from its founding to the present day through interactive and educational exhibits.",
+    "image": "images/museo_ciudad.webp"
+  },
+  {
+    "name": "El Panecillo Hill",
+    "address": "Top of El Panecillo Hill, Quito",
+    "description": "A natural lookout crowned by the statue of the Virgin of Quito, offering the best panoramic views of the historic center and the entire city.",
+    "image": "images/el_panecillo.webp"
+  }
+]

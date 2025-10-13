@@ -15,9 +15,9 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 480px) and (max-width: 767px)">
     <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 770px)">
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 480px) and (max-width: 769px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 479px)">
     <!-- icon -->
     <link rel="icon" href="images/comercio_ecuador.ico" type="image/x-icon" sizes="32x32">
@@ -48,62 +48,35 @@
             </nav>
         </div>
     </header>
+
     <main>
-            <h1>Discover on the Chamber of Commerce</h1>
-            <div class="hero-image">
-                <img src="images/banner.png" alt="hero image">
-                <h2 class="site-title">IntegraDeline</h2>
-            </div>
+        <div class="visit-info">
+            <div id="visit-message" class="visit-message"></div>
+        </div>
 
-            <section id="site-purpose">
-                <h2>Purpose of the Site</h2>
-                <p>
-                    The purpose of <strong class="highlight-title">IntegraDeline</strong> is to offer a digital platform that showcases services in 
-                    <em>industrial automation</em>, <em>electronic design</em>, and <em>software development</em> for companies seeking to optimize their processes 
-                    and move toward digital transformation. 
-                    The website will provide detailed information about services, completed projects, technical educational resources, 
-                    and a contact form to request personalized consulting or quotations.
-                </p>
-            </section>
+        <h1>Discover on the Chamber of Commerce</h1>
+        <p class="intro">
+            Explore the rich culture, business opportunities, and attractions that make Quito a vibrant and growing city. 
+            Here are some of the most iconic and interesting places to visit and discover.
+        </p>
 
-            <section id="site-scenarios">
-                <h2>Visitor Scenarios</h2>
-                <p>
-                    The following scenarios reflect the real needs of the main profiles visiting 
-                    <strong class="highlight-title">IntegraDeline</strong>.
-                    Each represents a situation that drives the search for industrial, software, or learning solutions within the site.
-                </p>
+        <section class="discover-grid">
+            <!-- cards json -->
+        </section>
+    </main>
 
-                <!-- Container where cards will be injected -->
-                <div id="scenario-cards" class="scenario-grid"></div>
-            </section>
-
-            <section class="wireframes">
-                <h2>Wireframes</h2>
-                <div class="wireframe-container">
-                    <div class="desktop-wireframe">
-                        <img src="images/rsz_desktop_integradeline.jpg" alt="Desktop Wireframe">
-                        <p>Desktop Wireframe</p>
-                    </div>
-                    <div class="mobile-wireframe">
-                        <img src="images/rsz_mobile_integradeline.jpg" alt="Mobile Wireframe">
-                        <p>Mobile Wireframe</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="social-media">
-                <a href="https://www.facebook.com/marcomv85" target="_blank" rel="noopener">Facebook</a> |
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a> |
-                <a href="https://www.linkedin.com/in/marco-merizalde-verduga-83879b133/" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
-            <div class="copy-right">
-                <p>&copy; <span id="currentyear"></span> Quito Chamber of Commerce. <br> Marco Merizalde <br> Ecuador </p>
-            </div>
-            <p id="lastModified"></p>
-        </footer>
-        <script src="scripts/data-scenarios.js"></script>
-        <script src="scripts/navigation.js"></script>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/marcomv85" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener">Twitter</a> |
+            <a href="https://www.linkedin.com/in/marco-merizalde-verduga-83879b133/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="copy-right">
+            <p>&copy; <span id="currentyear"></span> Quito Chamber of Commerce. <br> Marco Merizalde <br> Ecuador </p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/discover.js" defer></script>
 </body>
 </html>

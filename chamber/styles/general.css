@@ -208,6 +208,9 @@ button {
     width: 200px;
 }
 
+.intro {
+    width: 90%;
+}
 
 .body-section,.current-events, .weather, .spotlight {
     width: 70%;

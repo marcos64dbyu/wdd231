@@ -1,0 +1,79 @@
+.banner-automations {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/rsz_automationbanner.jpg');
+    background-repeat: no-repeat;     
+    background-position: center;      
+    background-size: cover;    
+    height: 500px;       
+    padding: 2rem;
+    margin: 2rem 0;
+    margin: 0;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.banner-automations div {
+    width: 30%;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.automation  {
+    text-align: center;
+    margin-left: 6%;
+}
+
+.banner-automations div h1 {
+    margin: 20px 0;
+    height: auto;
+}
+
+.banner-automations div p {
+    margin: 0;
+}
+
+section {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+}
+
+.right-color {
+    background-color: #F7F6F6;
+}
+
+.service-block, .sectors {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    margin: auto
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+/* .service-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} */
+
+.service-image img {
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.sectors {
+    display: block;
+    padding-left: 50%;
+    margin: 3rem 0;
+}

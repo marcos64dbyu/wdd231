@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntegraDeline</title>
+    <title>Contact Us</title>
     <meta name="description" content="IntegraDeline is a company specializing in automation, electricity, electronic design, and programming for businesses. Discover our technological solutions and services to boost your company.">
     <meta name="keywords" content="Quito, IntegraDeline, Automation, Electricity, Electronic Design, Programming, Business Solutions">
     <meta name="author" content="Marco Merizalde">
@@ -15,12 +15,13 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 481px) and (max-width: 768px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 480px)">
     <!-- icon -->
     <link rel="icon" href="images/integradeline.ico" type="image/x-icon" sizes="32x32">
     <!-- meta tags for social media -->
-    <meta property="og:title" content="IntegraDeline - Home">
+    <meta property="og:title" content="IntegraDeline - About Us">
     <meta property="og:description" content="IntegraDeline is a company specializing in automation, electricity, electronic design, and programming for businesses. Discover our technological solutions and services to boost your company.">
     <meta property="og:url" content="https://marcos64dbyu.github.io/wdd231/final/index.html">
     <meta property="og:locale" content="en_US">
@@ -57,37 +58,43 @@
         </nav>
     </header>
     <main>
-        <h1>IntegraDeline</h1>
-        <div class="hero-image">
-            <img src="images/banner_img.png" alt="hero image">
-            <div class="hero-text">
-                <h2>IntegraDeline</h2>
-                <p>Where design and industry meet.</p>
-            </div>
+        <div class="banner-contact">
+            <h1>Contact Us</h1>
         </div>
-
-        <section id="site-purpose">
-            <h2>Purpose of the Site</h2>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
             <p>
-                The purpose of <strong class="highlight-title">IntegraDeline</strong> is to offer a digital platform that showcases services in 
-                <em>industrial automation</em>, <em>electronic design</em>, and <em>software development</em> for companies seeking to optimize their processes 
-                and move toward digital transformation. 
-                The website will provide detailed information about services, completed projects, technical educational resources, 
-                and a contact form to request personalized consulting or quotations.
-            </p>
-        </section>
-
-        <section id="site-scenarios">
-            <h2>Visitor Scenarios</h2>
-            <p>
-                The following scenarios reflect the real needs of the main profiles visiting 
-                <strong class="highlight-title">IntegraDeline</strong>.
-                Each represents a situation that drives the search for industrial, software, or learning solutions within the site.
+                Do you have a project in mind or need more information about our automation, 
+                electronic design, or digital solutions? Send us a message — we’ll be happy to help you.
             </p>
 
-            <!-- Container where cards will be injected -->
-            <div id="scenario-cards" class="scenario-grid"></div>
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration, etc." required>
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
         </section>
+
+
     </main>
     <footer>
         <div class="social-media">
@@ -99,7 +106,6 @@
             <p>&copy; <span id="currentyear"></span> IntegraDeline -  Marco Merizalde <br> Quito - Ecuador </p>
         </div>
     </footer>
-    <script src="scripts/data-scenarios.js"></script>
     <script src="scripts/date.js"></script>
 </body>
 </html>

@@ -25,9 +25,23 @@
 .nav-dropdown > a::after{
     content:"▸";
 }
+
 .nav-dropdown.open > a::after{
     content:"▾";
 }
+
+.hero-text h2 {
+    font-size: 2rem;
+}
+
+.hero-text p {
+    font-size: 0.8rem;
+}
+
+.hero-image {
+  top: 3rem;
+}
+
 .dropdown-menu{
     position:static; 
     min-width:0; 
@@ -36,60 +50,94 @@
     padding:0;
 }
 
-main h1{
-  height: 8rem;
+.content-about {
+  max-width: 90%;
+  width: 90%;
+  margin: auto;
+  padding-left: 2rem;
+  text-align: justify;
 }
 
-/* Hero Image Section */
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: var(--primary-color);
-    height: 8rem;
-    position: absolute;
-    top: 4rem;
-    width: 100%;
-    z-index: 8;
+.content-about ul {
+  padding-left: 3rem;
+  width: 75%;
 }
 
-.hero-image img {
-    width: 5rem;
-    height: 5rem;
-    object-fit: cover;
-    opacity: 0.8;
+.navbar-collapsed {
+  display: none;
 }
 
-.hero-text {
-    text-align: center;
+.banner-automations {
+  flex-direction: column;
+  align-items: normal;
+  height: 250px;
 }
 
-.hero-text h2 {
-    font-family: var(--hero-h2-font);
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 0;
+.banner-about {
+  margin: auto;
+  padding-left: 2rem;
+  font-size: smaller;
+  justify-content: center;
 }
 
-.hero-text p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 0.7rem;
-    margin: 0;
+.banner-about p {
+    width: 90%;
 }
 
-.scenario-grid {
-    display: block;
+.banner-automations div {
+  font-size: smaller;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
 }
 
-/* --- MENU TOGGLE SAFE MODE (solo afecta pantallas pequeñas) --- */
+.benefits {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* Oculta el checkbox para no interferir con el diseño */
+.banner-automations div h1 {
+  margin: 0;
+}
+
+.service-block {
+  flex-direction: column;
+  max-width: 90%;
+  width: 70%;
+}
+
+.service-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sectors {
+  margin: auto;
+  padding-left: 0;
+}
+
+/* When the checkbox is activated, we show the menu */
+#menu-toggle:checked + .menu-icon + .navbar-collapsed {
+  display: block;
+}
+
+.navbar-collapsed ul {
+  display: block;
+}
+
+.nav-dropdown > a::after {
+  content: "";
+}
+
+/* --- MENU TOGGLE --- */
+
+/* Hide checkbox to avoid interfering with design */
 #menu-toggle {
   display: none;
 }
 
-/* Estilo del icono del menú */
+/* Menu icon style */
 .menu-icon {
   display: block;
   font-size: 26px;
@@ -97,17 +145,17 @@ main h1{
   color: #0A1622;
 }
 
-/* Oculta el menú por defecto */
+/* Hide menu by default */
 .navbar-collapse {
   display: none;
 }
 
-/* Muestra el menú cuando el checkbox está marcado */
+/* Show menu when checkbox is checked */
 #menu-toggle:checked ~ .navbar-collapse {
   display: block;
 }
 
-/* Diseño vertical del menú cuando está desplegado */
+/* Vertical menu layout when deployed */
 .navbar-collapse ul {
   list-style: none;
   margin: 0;
@@ -129,4 +177,8 @@ main h1{
 
 .navbar-collapse ul li a:hover {
   background: #f5f5f5;
+}
+
+.form-group input, .form-group textarea {
+  width: 90%;
 }

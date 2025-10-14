@@ -1,0 +1,45 @@
+.banner-about {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/banner-about.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;                 
+    padding-left: 7rem;               
+    height: 250px;      
+    margin: 0;
+}
+
+.banner-about h1 {
+    margin-top: 4%;
+    height: 1rem;
+}
+
+.banner-about p {
+    width: 40%;
+}
+
+.content-about h2 {
+    border-top: 2px solid #ccc;
+    margin-top: 3rem;
+}
+
+.content-about ul{
+    padding-left: 5rem;
+}
+
+.content-about {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.content-about p {  
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+.our-mission {
+    border-top: none !important;
+}

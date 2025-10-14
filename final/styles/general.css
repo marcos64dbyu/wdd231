@@ -9,8 +9,24 @@
 
 :root{
   --primary-color:#0A1622;
-  --secondary-color:#f15a24;
+  --secondary-color:#005F99;
+  --third-color:#21242A;
+  --accent-color:#33B7E0;
+  --text-dark:#16181C;
+  --alert-error:#E63946;
+  --sucess:#4CAF50;
   --hero-h2-font: 'BankGothic', sans-serif;
+  --Headings: Montserrat, sans-serif;
+  --Body-font: open-sans, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--Headings);
+}
+
+body{
+  font-family: var(--Body-font);
+  color:var(--text-dark);
 }
 
 main h1{
@@ -25,7 +41,7 @@ main h1{
   position:sticky;
   top:0;
   z-index:10;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--Headings);
 }
 .navbar .container{
   max-width:1200px;
@@ -37,7 +53,7 @@ main h1{
   height:56px;
 }
 
-.hamburger-menu{ 
+.menu-icon, #menu-toggle{ 
     display:none; 
     cursor:pointer; 
     font-size:24px; 
@@ -52,7 +68,7 @@ main h1{
     flex:1; 
 }
 
-.navbar-collapse ul{
+.navbar-collapsed ul{
   list-style:none; 
   display:flex; 
   align-items:center; 
@@ -164,6 +180,7 @@ section {
     margin: 10px auto;
     border: solid 1px #dcdfe3;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .highlight-title {
@@ -196,7 +213,7 @@ section {
 .quote {
     font-style: italic;
     margin: 1rem 0;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 /* Footer */
@@ -216,4 +233,13 @@ link, a {
 
 link:hover, a:hover {
     text-decoration: underline;
+}
+
+/* --- Disable links --- */
+a[href="#"],
+a:not([href]) {
+  pointer-events: none;  
+  cursor: default;       
+  opacity: 0.6;          
+  text-decoration: none; 
 }

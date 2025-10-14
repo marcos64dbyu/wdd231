@@ -1,0 +1,98 @@
+{
+  "services": [
+    {
+      "id": "consulting-design",
+      "title": "Consulting and Design",
+      "details": [
+        "Process analysis to identify automation opportunities.",
+        "Control engineering: design of control architectures and technology selection.",
+        "Feasibility and return on investment (ROI) studies.",
+        "Design of SCADA, PLC, and DCS systems."
+      ],
+      "image": "rsz_consultoria.jpg",
+      "alt": "Engineer analyzing an industrial robot in a lab environment."
+    },
+    {
+      "id": "system-integration",
+      "title": "System Integration",
+      "details": [
+        "PLC programming (Siemens, Allen-Bradley, Schneider, etc.).",
+        "SCADA/HMI integration for real-time monitoring and control.",
+        "Automation of production lines and specific machinery.",
+        "Industrial communication: Modbus, Profibus, Profinet, Ethernet/IP, OPC-UA networks.",
+        "Integration of industrial robots (robotic arm, AGVs/AMRs)."
+      ],
+      "image": "rsz_netbus.jpg",
+      "alt": "Illustration of PLC, Modbus, Profibus and Ethernet/IP industrial communication systems."
+    },
+    {
+      "id": "process-control",
+      "title": "Process Control",
+      "details": [
+        "Automation of continuous processes (chemical, food, pharmaceutical).",
+        "Motion control and high-precision servomotors.",
+        "Advanced instrumentation and sensing (Industrial IoT, IIoT)."
+      ],
+      "image": "rsz_controldeprocesos.jpg",
+      "alt": "Diagram representing industrial process control with sensors and actuators."
+    },
+    {
+      "id": "software-development",
+      "title": "Industrial Software Development",
+      "details": [
+        "Development of customized HMI interfaces.",
+        "Applications for remote monitoring and cloud-based control.",
+        "MES/MOM systems for production management.",
+        "Integration with ERP/CRM systems for full traceability."
+      ],
+      "image": "DesarrolloSoftwareIndustrial.jpg",
+      "alt": "Computer monitor displaying industrial dashboard analytics."
+    },
+    {
+      "id": "installation-commissioning",
+      "title": "Installation and Commissioning",
+      "details": [
+        "Wiring and assembly of control panels and electrical cabinets.",
+        "Factory Acceptance Testing (FAT) and Site Acceptance Testing (SAT).",
+        "Commissioning and startup of industrial systems."
+      ],
+      "image": "rsz_puestaenmarcha.jpg",
+      "alt": "Technicians assembling and testing industrial automation systems."
+    },
+    {
+      "id": "advanced-solutions",
+      "title": "Advanced Solutions",
+      "details": [
+        "Industry 4.0 and IIoT: data analytics and industrial big data.",
+        "Artificial intelligence for process optimization.",
+        "Industrial cybersecurity (network and PLC protection).",
+        "Energy efficiency and resource management."
+      ],
+      "image": "rsz_solucionavanzada.jpg",
+      "alt": "Digital interface representing Industry 4.0 and AI-driven systems."
+    },
+    {
+      "id": "maintenance-support",
+      "title": "Maintenance and Support",
+      "details": [
+        "Preventive and corrective maintenance of control systems.",
+        "Updating and migration of obsolete systems.",
+        "24/7 remote assistance and predictive monitoring.",
+        "Training for operational and maintenance personnel."
+      ],
+      "image": "rsz_mantenimiento.jpg",
+      "alt": "Team of engineers performing industrial equipment maintenance."
+    }
+  ],
+  "applicationSectors": {
+    "title": "Application Sectors",
+    "sectors": [
+      "Food and Beverage",
+      "Automotive",
+      "Mining and Metallurgy",
+      "Chemical and Pharmaceutical",
+      "Energy and Utilities",
+      "Logistics and Automated Storage"
+    ]
+  }
+}

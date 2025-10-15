@@ -117,7 +117,6 @@
   padding-left: 0;
 }
 
-/* When the checkbox is activated, we show the menu */
 #menu-toggle:checked + .menu-icon + .navbar-collapsed {
   display: block;
 }
@@ -130,14 +129,12 @@
   content: "";
 }
 
-/* --- MENU TOGGLE --- */
 
-/* Hide checkbox to avoid interfering with design */
 #menu-toggle {
   display: none;
 }
 
-/* Menu icon style */
+
 .menu-icon {
   display: block;
   font-size: 26px;
@@ -145,17 +142,16 @@
   color: #0A1622;
 }
 
-/* Hide menu by default */
+
 .navbar-collapse {
   display: none;
 }
 
-/* Show menu when checkbox is checked */
+
 #menu-toggle:checked ~ .navbar-collapse {
   display: block;
 }
 
-/* Vertical menu layout when deployed */
 .navbar-collapse ul {
   list-style: none;
   margin: 0;

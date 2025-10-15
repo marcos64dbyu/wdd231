@@ -1,4 +1,3 @@
-/* General styles */
 @font-face {
   font-family: 'BankGothic';
   src: url('../fonts/bgothl.ttf') format('truetype');
@@ -34,7 +33,6 @@ main h1{
   height: 12rem;
 }
 
-/* Top bar menu */
 .navbar{
   background:#fff;
   border-bottom:1px solid #dcdfe3;
@@ -88,7 +86,7 @@ main h1{
     text-decoration:underline; 
 }
 
-/* Dropdown */
+
 .nav-dropdown{ 
     position:relative; 
 }
@@ -125,7 +123,6 @@ main h1{
     cursor: pointer;
 }
 
-/* show nav-dropdown menu */
 .nav-dropdown:hover > .dropdown-menu {
   display: block !important;
 }
@@ -134,7 +131,7 @@ main h1{
     display:block !important; 
 }
 
-/* Hero Image Section */
+
 .hero-image {
     display: flex;
     justify-content: center;
@@ -172,7 +169,7 @@ main h1{
     margin: 0;
 }
 
-/* body page */
+
 
 section {
     padding: 2rem 3rem;
@@ -213,10 +210,9 @@ section {
 .quote {
     font-style: italic;
     margin: 1rem 0;
-    /* font-weight: bold; */
 }
 
-/* Footer */
+
 footer {
     border-top:3px solid #dcdfe3;
     background: var(--primary-color);
@@ -235,7 +231,6 @@ link:hover, a:hover {
     text-decoration: underline;
 }
 
-/* --- Disable links --- */
 a[href="#"],
 a:not([href]) {
   pointer-events: none;  

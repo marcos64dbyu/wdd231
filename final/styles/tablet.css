@@ -41,7 +41,7 @@ main h1{
   height: 8rem;
 }
 
-/* Hero Image Section */
+
 .hero-image {
   display: flex;
   justify-content: center;
@@ -79,14 +79,12 @@ main h1{
   margin: 0;
 }
 
-/* --- MENU TOGGLE --- */
 
-/* Hide checkbox to not interfere with design */
 #menu-toggle {
   display: none;
 }
 
-/* Menu icon style */
+
 .menu-icon {
   display: none;
   font-size: 26px;
@@ -94,17 +92,17 @@ main h1{
   color: #0A1622;
 }
 
-/* Hide menu by default */
+
 .navbar-collapse {
   display: none;
 }
 
-/* Show menu when checkbox is checked */
+
 #menu-toggle:checked ~ .navbar-collapse {
   display: block;
 }
 
-/* Vertical layout for menu when expanded */
+
 .navbar-collapse ul {
   list-style: none;
   margin: 0;

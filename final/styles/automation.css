@@ -58,13 +58,6 @@ section {
     flex-direction: row-reverse;
 }
 
-/* .service-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-} */
-
 .service-image img {
     width: auto;
     height: 250px;
